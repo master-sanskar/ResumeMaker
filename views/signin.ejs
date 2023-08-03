@@ -1,0 +1,30 @@
+<%- include('./partials/header')%>
+<div class="container mt-5">
+    <h3 class="fw-light fs-3 alert alert-dark w-50">
+        Continue building resume
+    </h3>
+    <form action="/signin" method="POST">
+        <input
+            class="mb-3 form-control w-75"
+            type="text"
+            placeholder="username"
+            name="username"
+        />
+
+        <input
+            class="mb-3 form-control w-75"
+            type="text"
+            placeholder="password"
+            name="password"
+        />
+
+        <p class="d-flex w-75 justify-content-end">
+            <a href="/forget-password">Forget Password ?</a>
+        </p>
+
+        <button class="btn btn-primary">Create Account</button>
+    </form>
+    <p>Doesn't have an account ? <a href="/signup">Sign up</a></p>
+</div>
+
+<%- include('./partials/footer')%>

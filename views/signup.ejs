@@ -1,0 +1,36 @@
+<%- include('./partials/header')%>
+<div class="container mt-5">
+    <h3 class="fw-light fs-3 alert alert-dark w-50">
+        Create your account to build awesome resume
+    </h3>
+    <form action="/signup" method="POST">
+        <input
+            class="mb-3 form-control w-75"
+            type="text"
+            placeholder="username"
+            name="username"
+        />
+        <input
+            class="mb-3 form-control w-75"
+            type="email"
+            placeholder="email"
+            name="email"
+        />
+        <input
+            class="mb-3 form-control w-75"
+            type="password"
+            placeholder="password"
+            name="password"
+        />
+        <input
+            class="mb-3 form-control w-75"
+            type="text"
+            placeholder="contact"
+            name="contact"
+        />
+        <button class="btn btn-primary">Create Account</button>
+    </form>
+    <p>Already have an account ? <a href="/signin">Sign in</a></p>
+</div>
+
+<%- include('./partials/footer')%>
